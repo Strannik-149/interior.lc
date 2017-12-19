@@ -1,0 +1,614 @@
+.wrapper-header,
+.wrapper-choice,
+.wrapper-banner,
+.wrapper-main,
+.wrapper-designer,
+.wrapper-project,
+.wrapper-footer {
+	width: 100%;
+	background-color: #ffffff;
+}
+.wrapper-header { background-color: rgb(24, 24, 23); }
+.wrapper-choice { background-color: rgb(24, 24, 23); }
+.wrapper-banner { height: 670px; }
+.wrapper-main { background-color: rgb(249, 250, 252); }
+.wrapper-designer { background-image: url("../img/background-designer.png"); background-position: 100% 100%; }
+.wrapper-footer { background-color: rgb(24, 24, 23); }
+
+.header,
+.choice,
+.main,
+.designer,
+.project,
+.footer {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header { height: 100px; }
+.choice { height: 749px; }
+.designer { height: 980px; width: 1265px; }
+.footer { height: 440px; }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Блок header__logo --> Блок menu */
+.header__logo { float: left; margin: 34px 87px 36px 0; }
+
+.menu { display: inline-block; }
+
+.header-menu__list {
+	height: 96px;
+	margin-right: 56px;
+	display: inline-block;	
+}
+.header-menu__list:hover { border-bottom: 4px solid rgb(255, 206, 118); }
+.header-menu__link { text-decoration: none; }
+.header-menu__item {
+	font-size: 14px;
+	font-family: "Poppins";
+	font-weight: 600;
+	color: rgb(254, 254, 254);
+	padding: 45px 0 39px 0;
+}
+	/* Блок menu с стикерами */
+.menu-icon-stckers { margin-left: 77px; }
+.stckers__link_search { margin-right: 30px; }
+.stckers__link_like { margin-right: 22px; }
+
+.stckers__link_search:hover { border-bottom: 2px solid rgb(255, 206, 118); }
+.stckers__link_like:hover { border-bottom: 2px solid rgb(255, 206, 118); }
+.stckers__link_bascket:hover { border-bottom: 2px solid rgb(255, 206, 118); }
+
+.stckers__link_bascket::after {
+	content: "2";
+    display: inline-block;
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 18px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    background-image: url(../img/stickers-bascet-counter.png);
+    background-repeat: no-repeat;
+}
+
+/* !!!!!!!!!!! Блок с slider !!!!!!!!!!!!!!!!!!!*/
+.slider { height: 880px; }
+.slider__img {
+	height: 880px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.background-1 { background-image: url("../img/slider-backgroud-1.png") }
+.background-2 { background-image: url("../img/slider-backgroud-2.png") }
+
+.slider__title { width: 464px; padding-top: 334px; margin-left: 196px; }
+
+.slider__text-stripe {
+	width: 63px;
+	display: inline-block;
+	vertical-align: super;
+	margin-right: 20px;
+	border-bottom: 5px solid rgb(255, 206, 118);
+}
+
+.slider__text-name {
+	font-size: 25px;
+	display: inline-block;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	line-height: 0.76;
+	padding-bottom: 60px;
+}
+
+.text-name_color { color: rgb(255, 206, 118); }
+
+.slider__h1 {
+	font-size: 50px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	text-align: left;
+}
+
+.corner {
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	top: 405px;
+	z-index: 101;
+	background-repeat: no-repeat;
+}
+.corner-left { left: 43px; }
+.corner-right { right: 43px; }
+
+/* !!!!! Блок choise (ВЫБОРА) !!!!!!! */
+.choice__title {
+	width: 458px;
+	margin: 0 auto 100px;
+	padding-top: 93px;
+}
+.choice__title_h2 {
+	font-size: 40px;
+	font-family: "Poppins";
+	color: rgb(255, 206, 118);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 17px;
+}
+
+.choice__title-underline { width: 212px; display: inline-block; border-bottom: 1px solid #5e5e5d; }
+.choice__title-icon_rhomb { display: inline-block; padding: 0 12px 0 12px; vertical-align: text-bottom; }
+
+/* Блок с левым  и правым контентом */
+.choice-content-left,
+.choice-content-right {
+	width: 370px;
+	float: left;
+	margin-top: 55px;
+}
+
+.choice__box { width: 370px; margin-bottom: 69px; }
+
+.choice__box-h4 {
+	width: 255px;
+	font-size: 20px;
+	font-family: "Poppins";
+	padding-bottom: 23px;
+	color: rgb(255, 206, 118);
+	font-weight: bold;
+	text-align: right;
+}
+.box-h4_align-left { text-align: left; padding-left: 115px; }  /* Модификатор выравнивания заголовка 4-го уровня */
+
+.choice__box-subtitle {
+	width: 255px;
+	font-size: 15.5px;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	line-height: 1.28;
+	text-align: right;
+}
+.box-subtitle_align-left { text-align: left; padding-left: 115px; }   /* Модификатор выравнивания текста */
+
+.choice__box-icon { float: right; }  
+.box-icon_float-left { float: left; }  /* Модификатор обтекания иконок */
+
+.choice__between_img {
+	width: 421px;
+	height: 397px;
+	float: left;
+	background-image: url("../img/icon-between-sofa.png");
+	background-repeat: no-repeat;
+}
+
+/* Блок Wrapper-Banner */
+.banner {
+	float: left;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+} 
+.banner_one { 
+	width: 24.7%; /* 396px при 1600px */
+	height: 670px;
+	float: left;
+	background-image: url("../img/banner-img-one.png");	
+}
+.banner_one:hover, focus {
+	box-shadow: inset 0 0 10px rgba(20, 222, 26, 0.5);
+}
+.banner_two { 
+	width: 54%; /* 866px при 1600px */
+	height: 329px;
+	background-image: url("../img/banner-img-two.png"); 
+}
+.banner_two:hover, focus {
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.banner_three { 
+	width: 51%; /* 815px при 1600px */
+	height: 341px;
+	background-image: url("../img/banner-img-three.png"); 
+}
+.banner_three:hover, focus {
+	box-shadow: inset 0 0 10px rgba(13, 183, 183, 0.5);
+}
+
+.banner_four { 
+	width: 21.3%; /* 338px при 1600px */
+	height: 329px;
+	background-image: url("../img/banner-img-four.png"); 
+}
+.banner_five { 
+	width: 24.3%; /* 389px при 1600px */
+	height: 341px;
+	background-image: url("../img/banner-img-five.png"); 
+}
+
+.banner-text { width: 184px; margin: 78px 0 0 98px; }
+.banner-text_three { width: 231px; margin: 51px 0 0 48px; }
+.banner-text_two { width: 178px; margin: 47px 0 0 54px; }
+
+.banner-text__title {
+	font-size: 1.875em; /* 30px */
+	font-family: "Poppins";
+	color: rgb(116, 157, 38);
+	font-weight: bold;
+	line-height: 1.2;
+	padding-bottom: 38px;
+}
+
+.title__subtitle { font-size: 0.875em; } /* 0.875px */ 
+
+.title_color-blue { color: rgb(89, 155, 167); }
+.title__subtitle_color-blue { color: rgb(89, 155, 167); }
+
+.title_color-black { color: rgb(53, 43, 48); }
+.title__subtitle_color-black { color: rgb(53, 43, 48); }
+
+/* Блок wrapper-main */
+.main__title { padding-top: 103px; margin: 0 auto 73px; }
+.choice__title_h2-color { color: rgb(24, 24, 23); }
+
+	/* Блок caatalog-box (каталог товара) */
+.catalog-box {
+	width: 272px;
+	height: 397px;
+	display: inline-block;
+	position: relative;
+	margin: 0 21px 30px 0;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.catalog-box:hover {
+	box-shadow: 0 0 40px -5px #00000075;
+	transform: scale(1.08);	
+}
+
+	/* Блок с background-color при наведении */
+.shadow-box {
+	width: 272px;
+	height: 397px;
+	position: absolute;
+}
+.shadow-box_background-hover {
+	width: 272px;
+	height: 397px;
+	display: none;
+	background-color: #fdd998;
+	opacity: 0.749;
+}
+.shadow-box:hover .shadow-box_background-hover { display: inline-block; }
+
+	/* Блок с user-interface::after (ПОЛЬЗОВАТЕЛЬСКИЙ ИНТЕРФЕЙС) НАЧАЛО СТИЛЕЙ */
+.user-interface {
+	width: 184px;
+	height: 57px;
+	background-color: rgb(45, 58, 75);
+  	opacity: 0.812;
+  	border-radius: 30px;
+  	margin: 165px auto;
+}
+
+.user-interface__item {
+	width: 92px;
+	margin: 0 auto;
+	padding-top: 19px;
+}
+
+.user-interface__link {
+	margin-right: 13px;
+	display: inline-block;
+}
+
+.user-interface__icon {
+	width: 19px;
+	height: 19px;
+	background-repeat: no-repeat;	
+}
+.icon_1 { background-image: url("../img/catalog-tovar-hover-search.png"); }
+.icon_2 { background-image: url("../img/catalog-tovar-hover-bascket.png"); }
+.icon_3 { background-image: url("../img/catalog-tovar-hover-like.png"); }
+
+.user-interface__link:hover .icon_1 { transform: scale(0.9); }
+.user-interface__link:hover .icon_2 { transform: scale(0.9); }
+.user-interface__link:hover .icon_3 { transform: scale(0.9); }
+	/* Блок с user-interface::after (ПОЛЬЗОВАТЕЛЬСКИЙ ИНТЕРФЕЙС) КОНЕЦ СТИЛЕЙ */
+
+
+.catalog-box_margin-bottom { margin: 0 21px 137px 0; }
+
+.catalog-box__before-icon::before {
+	content: "";
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	background-image: url("../img/catalog-box-price-new.png");
+	background-repeat: no-repeat;
+}
+.catalog-box__product-img {
+	height: 227px;
+	width: 232px;
+	margin: 0 auto 26px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.product-img_one { background-image: url("../img/catalog-box-product-one.png"); }
+.product-img_two { background-image: url("../img/catalog-box-product-two.png"); }
+.product-img_three { background-image: url("../img/catalog-box-product-three.png"); }
+.product-img_four { background-image: url("../img/catalog-box-product-four.png"); }
+.product-img_five { background-image: url("../img/catalog-box-product-five.png"); }
+.product-img_six { background-image: url("../img/catalog-box-product-six.png"); }
+.product-img_seven { background-image: url("../img/catalog-box-product-seven.png"); }
+.product-img_eight { background-image: url("../img/catalog-box-product-eight.png"); }
+
+.description-product { width: 181px; margin: 0 auto; }
+.description-product_name {
+	font-size: 20px;
+	font-family: "Poppins";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	padding-bottom: 21px;
+}
+.description-product_text {
+	font-size: 14px;
+	font-family: "Poppins";
+	color: rgb(109, 109, 109);
+	padding-bottom: 30px;
+}
+.product_price {
+	font-size: 27.38px;
+	padding-bottom: 0;
+}
+
+/* Блок с дизайнерами */
+.box-picture {
+	width: 419px; /*464px исходный размер*/
+	height: 540px;
+	position: relative;
+	display: inline-block;
+}
+.box-picture_two { left: -19px; } /* -68px иходный размер */
+.box-picture_three { left: -38px; }
+
+.designer-picture__shadow-before::before {
+	content: "";
+	width: 376px;
+	height: 358px;
+	position: absolute;
+	bottom: 0;
+	background-image: url("../img/designer-shadow.png");
+	background-repeat: no-repeat;
+}
+
+ .designer-picture__item {
+	width: 373px;
+	height: 481px;
+	position: absolute;
+    right: 0; 
+}
+
+.designer-picture__img {
+	width: 373px;
+	height: 427px;
+	background-repeat: no-repeat;
+}
+.img_one { background-image: url("../img/designer-one.png"); }
+.img_two { background-image: url("../img/designer-two.png"); }
+.img_three { background-image: url("../img/designer-three.png"); }
+
+.designer-picture__name {
+	font-size: 30px;
+	display: inline-block;
+	font-family: "Poppins";
+	color: rgb(250, 250, 250);
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 28px 28px 0 0;
+}
+
+.picture__name_border-line {
+	width: 172px;
+	border-bottom: 3px solid #ffce76;
+	display: inline-block;
+	vertical-align: super;
+}
+
+/* Блок c slider нижний */
+.slider_bottom { height: 999px; }
+.slider__img_bottom {
+	width: 25%;
+	height: 999px;
+	float: left;
+}
+.background-bottom-1 { background-image: url("../img/slider-backgroud-bottom-1.png") }
+.background-bottom-2 { background-image: url("../img/slider-backgroud-bottom-2.png") }
+.background-bottom-3 { background-image: url("../img/slider-backgroud-bottom-3.png") }
+.background-bottom-4 { background-image: url("../img/slider-backgroud-bottom-4.png") }
+
+.background-bottom-1:hover { box-shadow: inset 0 0 18px 5px rgba(255, 255, 255, 0.68); }
+.background-bottom-2:hover { box-shadow: inset 0 0 18px 5px rgb(255, 206, 118) }
+.background-bottom-3:hover { box-shadow: inset 0 0 18px 5px rgba(139, 212, 0, 0.56) }
+.background-bottom-4:hover { box-shadow: inset 0 0 18px 5px rgba(255, 255, 255, 0.68); }
+
+.slider__title_bottom { 
+	width: 221px; 
+	height: 902px;
+	padding-top: 57px; 
+	margin-left: 59px;
+	position: relative;
+}
+
+.slider__h1_bottom {
+	font-size: 26px;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.slider__text-name_bottom::after {
+	content: "INTERIOR DESIGN";
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+    position: absolute;
+    left: -75px;
+    bottom: 85px;
+    transform: rotate(270deg);
+	
+	line-height: 0; 
+    padding-bottom: 0;
+}
+/* Блок news-box */
+.news { display: inline-block; }
+.news-box {
+	width: 372px;
+	height: 515px;
+	background-color: #fff;
+	float: left;
+	margin: 0 23px 115px 0;
+}
+.news-box__img {
+	width: 372px;
+	height: 270px;
+	margin-bottom: 44px;
+	background-repeat: no-repeat;
+}
+.img_1 { background-image: url("../img/news-box-img-1.png"); }
+.img_2 { background-image: url("../img/news-box-img-2.png"); }
+.img_3 { background-image: url("../img/news-box-img-3.png"); }
+
+.news-box__description {
+	width: 315px;
+	margin: 0 auto;
+}
+.news-box__description_title {
+	font-size: 20px;
+	font-family: "Poppins";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+.news-box__description_subtitle {
+	font-size: 14px;
+	font-family: "Poppins";
+	color: rgba(49, 48, 45, 0.702);
+	line-height: 1.2;
+	padding-bottom: 23px;
+}
+
+.news-box__description_button {
+	width: 160px;
+	height: 50px;
+	background-color: #FFCE76;
+	font-size: 12px;
+	font-family: "Poppins";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-width: 0;
+}
+
+.news-box__description_button:hover { 
+	transform: translateX(15px);
+	transition-duration: 2s;
+}
+
+.description_button_margin { margin-left: 7px; }
+
+/* Блок footer (ПОДВАЛ)*/
+.contact {
+	margin: 63px 0;
+	display: inline-block;
+}
+.contact-box {
+	width: 260px;
+	height: 108px;
+	float: left;
+	border-left: 4px solid #a28550;
+	margin-right: 139px;
+}
+.contact-box__description {
+	width: 235px;
+	height: 76px;
+	padding: 12px 0 0 25px;
+}
+.contact-box__description_title {
+	font-size: 24px;
+	font-family: "Poppins";
+	color: rgb(255, 206, 118);
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+.contact-box__description_number {
+	font-size: 14px;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	padding-bottom: 10px;
+}
+
+	/* Блок с логотипом в блоке footer */
+.footer__logo {
+	margin-bottom: 34px;
+}
+
+	/* Блок footer-social */
+.footer-social {
+	width: 271px;
+	float: left;
+	margin-right: 126px;
+}
+.footer-social__img {
+	margin-right: 30px;
+}
+.footer-social__img:hover { transform: scale(0.95); }
+
+	/* Блок footer-timetable (РАСПИСАНИЕ) */
+.footer-timetable {
+	width: 272px;
+	height: 90px;
+	margin-right: 130px;
+	float: left;
+
+}
+.footer-timetable__title {
+	font-size: 26px;
+	font-family: "Poppins";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	padding-bottom: 22px;
+}
+.footer-timetable__text {
+	font-size: 14px;
+	font-family: "Poppins";
+	color: rgba(255, 255, 255, 0.502);
+	padding-bottom: 13px;
+}
+
+	/* Блок с почтой */
+.footer-email {
+	width: 371px; 
+	height: 142px;
+}
+.footer-form__email {
+	width: 352px;
+	height: 44px;
+	font-size: 14px;
+	font-family: "Poppins";
+	background-color: rgba(255, 255, 255, 0);
+	color: #fff;
+	padding-left: 15px;
+	margin-bottom: 17px;
+}
+.footer-form__email:focus { outline:none; }
+
+
+.margin-right_none { margin-right: 0; } /* Модификатор удаления отступа справа */
